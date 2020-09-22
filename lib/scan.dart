@@ -44,7 +44,7 @@ class _ScanPageState extends State<ScanPage> {
               onPressed: () async {
 
 
-                ScanResult codeSanner = await BarcodeScanner.scan();    //barcode scnner
+                ScanResult codeSanner = await BarcodeScanner.scan();    
                 setState(() {
                   print('batata');
                   print(codeSanner);
@@ -52,12 +52,7 @@ class _ScanPageState extends State<ScanPage> {
 
                 });
 
-                // try{
-                //   BarcodeScanner.scan()    this method is used to scan the QR code
-                // }catch (e){
-                //   BarcodeScanner.CameraAccessDenied;   we can print that user has denied for the permisions
-                //   BarcodeScanner.UserCanceled;   we can print on the page that user has cancelled
-                // }
+               
 
 
               },
@@ -76,5 +71,5 @@ class _ScanPageState extends State<ScanPage> {
     );
   }
 
-//its quite simple as that you can use try and catch staatements too for platform exception
+
 }
