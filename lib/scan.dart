@@ -1,13 +1,14 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 
+
 class ScanPage extends StatefulWidget {
   @override
   _ScanPageState createState() => _ScanPageState();
 }
 
 class _ScanPageState extends State<ScanPage> {
-  ScanResult qrCodeResult;
+  String qrCodeResult;
   @override
   initState() {
     super.initState();
@@ -30,7 +31,7 @@ class _ScanPageState extends State<ScanPage> {
               textAlign: TextAlign.center,
             ),
             Text(
-              '$qrCodeResult',
+              (qrCodeResult != null? '$qrCodeResult': ''),
               style: TextStyle(
                 fontSize: 20.0,
               ),
@@ -43,22 +44,10 @@ class _ScanPageState extends State<ScanPage> {
               padding: EdgeInsets.all(15.0),
               onPressed: () async {
 
-
-                ScanResult codeSanner = await BarcodeScanner.scan();    //barcode scnner
+                String codeSanner = await BarcodeScanner.scan();
                 setState(() {
-                  print('batata');
-                  print(codeSanner);
                   qrCodeResult = codeSanner;
-
                 });
-
-                // try{
-                //   BarcodeScanner.scan()    this method is used to scan the QR code
-                // }catch (e){
-                //   BarcodeScanner.CameraAccessDenied;   we can print that user has denied for the permisions
-                //   BarcodeScanner.UserCanceled;   we can print on the page that user has cancelled
-                // }
-
 
               },
               child: Text(
@@ -76,5 +65,4 @@ class _ScanPageState extends State<ScanPage> {
     );
   }
 
-//its quite simple as that you can use try and catch staatements too for platform exception
 }

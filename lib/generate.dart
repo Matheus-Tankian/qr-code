@@ -9,8 +9,7 @@ class GeneratePage extends StatefulWidget {
 }
 
 class GeneratePageState extends State<GeneratePage> {
-  String qrData =
-      "https://github.com/neon97";  // already generated qr code when the page opens
+  String qrData = "https://github.com/neon97";
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +25,7 @@ class GeneratePageState extends State<GeneratePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             QrImage(
-              //plce where the QR Image will be shown
+
               data: qrData,
             ),
             SizedBox(
@@ -48,7 +47,7 @@ class GeneratePageState extends State<GeneratePage> {
                 padding: EdgeInsets.all(15.0),
                 onPressed: () async {
 
-                  if (qrdataFeed.text.isEmpty) {        //a little validation for the textfield
+                  if (qrdataFeed.text.isEmpty) {
                     setState(() {
                       qrData = "";
                     });
