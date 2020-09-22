@@ -2,6 +2,10 @@
 
 A new Flutter application.
 
+  barcode_scan: ^2.0.2
+  qr_flutter: ^3.2.0
+  path_provider: ^1.6.5
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
