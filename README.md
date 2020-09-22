@@ -2,8 +2,14 @@
 
 A new Flutter application.
 
+dependencies:
+
+  flutter:
+  
   barcode_scan: ^2.0.2
+
   qr_flutter: ^3.2.0
+
   path_provider: ^1.6.5
 
 ## Getting Started
