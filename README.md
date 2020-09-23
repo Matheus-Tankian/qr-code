@@ -12,7 +12,15 @@ dependencies:
 
     path_provider: ^1.6.5
   
-  
+ ![home](https://github.com/Matheus-Tankian/qr-code/blob/master/Screenshot_20200923-184200.jpg)
+ 
+ ![generate qrcode](https://github.com/Matheus-Tankian/qr-code/blob/master/Screenshot_20200923-184443.jpg)
+ 
+ ![scan](https://github.com/Matheus-Tankian/qr-code/blob/master/Screenshot_20200923-184509.jpg)
+ 
+ ![cam](https://github.com/Matheus-Tankian/qr-code/blob/master/Screenshot_20200923-184549.jpg)
+ 
+ ![result](https://github.com/Matheus-Tankian/qr-code/blob/master/Screenshot_20200923-184542.jpg)
 
 ## Getting Started
 
